@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+    <meta charset="utf-8">
+    <link rel="icon" href="images/icon.ico"/>
+    <meta name="viewport" content=" width=device-width, initial-scale=1">
+    <meta http-equiv="Healthcare Assistant" content=" Healthcare Assistant.html"/>
+    <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+    <title>HealthcareAsistant</title>
+
+    <link rel="stylesheet" href="css%20themes/stylesheethome.css">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body>
+
+<nav class="navbar navbar-fixed-top">
+    <div class="uppernavigationbar">
+        <ul>
+            <li class="left"><img src="images/icon.jpg" width="70" height="60"> </img></li>
+            <li class="left"><a href="Healthcare Assistant.html">Home</a></li>
+            <li class="left"><a href="MyHealthRecords.html">My Health Records</a></li>
+            <li class="left"><a href="Medicine.html">Medicine</a></li>
+            <li><button type="button" class="btn btn-default btn-sm">
+                <span class="glyphicon glyphicon-user"></span> Register</button></li>
+            <li><button type="button" class="btn btn-default btn-sm" onclick="document.getElementById('id01').style.display='block'" style="width:auto;">
+                <span class="glyphicon glyphicon-user "></span> Login</button></li>
+            <li class="right"><a href="Support.html">Support</a></li>
+            <li class="right"><button type="submit"><i class="fa fa-search"></i></button></li>
+            <li class="right"><input type="text" placeholder="Search.."></li>
+        </ul>
+    </div>
+</nav>
+<div id="id01" class="modal">
+
+    <form class="modal-content animate" action="">
+        <div class="imgcontainer">
+            <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+            <img src="/img_avatar2.png" alt="Avatar" class="avatar">
+        </div>
+
+        <div class="container" id="my_container">
+            <label for="uname"><b>Username</b></label>
+            <input type="text" placeholder="Enter Username" name="uname" required>
+
+            <label for="psw"><b>Password</b></label>
+            <input type="password" placeholder="Enter Password" name="psw" required>
+
+            <button type="submit" id="btn">Login</button>
+            <label>
+                <input type="checkbox" checked="checked" name="remember"> Remember me
+            </label>
+        </div>
+
+        <div class="container" id="my_container_2" style="background-color:#f1f1f1">
+            <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn" id="btn">Cancel</button>
+            <span class="psw">Forgot <a href="#">password?</a></span>
+        </div>
+    </form>
+</div>
+
+<div style="padding-left:10px;padding-right: 10px">
+    <br><br>
+    <br>
+
+    <div class="container-fluid " style="margin-bottom: 10px" >
+          <div class="row" style="height: 500px;">
+                 <div class="img">
+                 </div>
+          </div>
+    </div>
+    <div class="content_main">
+        <div class="content1">
+            <h1 class="text-primary text-center">Better Access</h1>
+            <p class="text-primary" style="font-size: 20px;color: #000000 ">Your important healthcare information will be available in one place online that is easily accessible by your authorized doctors, specialists, or hospitals.
+                Even if you move or travel interstate, the information can be viewed securely online, anywhere, any time.
+                If you want, you can access your health information from any computer with an internet connection.
+                You control who can see it. Once it’s set up you don’t need to do anything.</p>
+        </div>
+        <div class="content2">
+            <h1 class="text-primary text-center"> Privacy Matters</h1>
+            <p style="font-size: 20px;color: #000000; ">To create a Health Record, information is<br> taken about you and from Medicare and some<br>
+                other government bodies including your name, date of birth, <br>and Medicare records from the past years.</p>
+        </div>
+        <div class="content3">
+            <h1 class="text-primary text-center"> Improved Safety</h1>
+            <p style="font-size: 20px;color: #000000 ">In a medical emergency, it providers connected to the My Health Record system can see your health information to provide you the best possible care quickly.
+                If you want, you can list any allergies, adverse reactions and medical conditions you may have to help healthcare providers give you better advice and
+                treatment.</p>
+        </div>
+        <div class="content4">
+            <h1 class="text-primary text-center"> More Convenient</h1>
+            <p style="font-size: 20px;color: #000000 ">You won’t need to worry about having to remember and repeat your health history like medicines, details of chronic conditions, and dates of recent tests with different or new healthcare providers.
+                The same goes for your children’s health history like immunizations and medical tests.</p>
+        </div>
+        <div class="content5">
+            <h1 class="text-primary text-center"> Strong Security</h1>
+            <p style="font-size: 20px;color: #000000 ">You can control who sees what information in your My Health Record.
+                There are strict rules and regulations on who can see or use your health record to protect your health information from misuse or loss. There are penalties for anyone who breaks these.</p>
+        </div>
+    </div>
+</div>
+<script>
+    // Get the modal
+    var modal = document.getElementById('id01');
+
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function(event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+    }
+</script>
+</body>
+<footer>
+    <div class="row">
+        <div class="seven col-md-4">
+        <ul>
+            <li><a href="Resource.html">Resources</a></li>
+            <li><a href="Disclaimer.html">Disclaimer</a></li>
+            <li><a href="Privacy Policy.html">Privacy Policy</a></li>
+            <li><a href="Terms of services.html">Terms of Services</a></li>
+        </ul>
+        </div>
+       <div class=" eight col-md-4">
+           <h1>Advertise and share us on</h1>
+           <i class="fa fa-facebook-official w3-hover-opacity w3-large" style="font-size: 30px" ></i>
+           <i class="fa fa-instagram w3-hover-opacity w3-large" style="font-size: 30px"></i>
+           <i class="fa fa-twitter w3-hover-opacity w3-large" style="font-size: 30px"></i>
+           <i class="fa fa-linkedin w3-hover-opacity w3-large" style="font-size: 30px"></i>
+       </div>
+        <div class="nine col-md-4" >
+            <h1>Suggestion Box</h1><br>
+                 <textarea   style="width:400px;height:100px;vertical-align:top;resize:none" placeholder="Type..."></textarea><br>
+            <button type="submit">Submit</button>
+        </div>
+    </div>
+</footer>
+</html>
